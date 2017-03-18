@@ -1,4 +1,4 @@
-*font: xft:Anonymice\ Powerline:size=12,xft:Anonymice\ Powerline\ Nerd\ Font:size=12,xft:Monospace:size=11:antialias=true:hinting=true
+*font: xft:Hack:size=13,xft:FontAwesome:pixelsize=12
 
 ! ------------------------------------------------------- Colorscheme: Gruvbox
 *background: #282828
@@ -49,7 +49,7 @@ URxvt*cursorColor:       #fbf1c7
 URxvt*colorUL:           #366060
 URxvt*underlineColor:    #dfaf8f
 
-URxvt*letterSpace:       2
+URxvt*letterSpace:       1
 
 URxvt*transparent:       false
 URxvt*shading:           25
@@ -59,8 +59,8 @@ URxvt.url-launcher:      /usr/bin/chromium-browser
 URxvt.matcher.button:    1
 
 URxvt*loginShell:        true
-URxvt*cursorBlink:       true
-URxvt*pointerBlank:      true
+URxvt*cursorBlink:       false
+URxvt*pointerBlank:      false
 URxvt*pointerBlankDelay: 2
 URxvt*scrollBar:         false
 URxvt*secondaryScroll:   true

@@ -1,0 +1,14 @@
+#!/bin/python
+
+import urllib.request, json
+
+#city = "2735943"
+city = "Porto,PT"
+api_key = "5f1c3d72109b052d26b28cb08c7b49f8" 
+
+weather = eval(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}".format(city, api_key)).read())[2:-1])
+
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]) - 272.15)
+
+print("%s, %i °C" % (info, temp))
